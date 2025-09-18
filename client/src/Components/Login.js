@@ -19,7 +19,7 @@ const Login = () => {
 
     try {
       let response = await fetch(
-        `https://recipes-1-94o3.onrender.com/auth/login`,
+        `http://localhost:5000/auth/login`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
