@@ -21,7 +21,7 @@ const UpdatePassword = () => {
     const { email, password } = formData;
 
     try {
-      const response = await fetch("http://localhost:5000/auth/forgotpassword", {
+      const response = await fetch("https://recipes-s.onrender.com/auth/forgotpassword", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, newPassword: password }),
