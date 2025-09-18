@@ -14,7 +14,7 @@ const LikedProducts = () => {
     try {
       // Make a GET request to the /api/liked-products endpoint
       const response = await fetch(
-        "http://localhost:5000/auth/likedRecipes"
+        "https://recipes-s.onrender.com/auth/likedRecipes"
       );
 
       if (!response.ok) {
