@@ -21,7 +21,7 @@ const AddRecipe = () => {
     try {
       const ingredientsArray = ingredients.split(',').map(ingredient => ingredient.trim());
       
-      const response = await fetch("http://localhost:5000/auth/recipe", {
+      const response = await fetch("https://recipes-1-94o3.onrender.com/auth/recipe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
