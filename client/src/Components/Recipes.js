@@ -17,7 +17,7 @@ const Recipes = () => {
 
   const fetchRecipes = async () => {
     try {
-      const res = await fetch("https://recipes-1-94o3.onrender.com/auth/recipe", {
+      const res = await fetch("http://localhost:5000/auth/recipe", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const Recipes = () => {
     if (!window.confirm("Delete this recipe?")) return;
     try {
       const res = await fetch(
-        `https://recipes-1-94o3.onrender.com/auth/recipe/${id}`,
+        `http://localhost:5000/auth/recipe/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -62,7 +62,7 @@ const Recipes = () => {
   const handleAddFavorite = async (id) => {
     try {
       const res = await fetch(
-        `https://recipes-1-94o3.onrender.com/auth/likedRecipes/${id}`,
+        `http://localhost:5000/auth/likedRecipes/${id}`,
         {
           method: "POST",
           headers: {
@@ -90,7 +90,7 @@ const Recipes = () => {
     } else {
       try {
         const res = await fetch(
-          `https://recipes-1-94o3.onrender.com/auth/searchRecipes/${key}`,
+          `http://localhost:5000/auth/searchRecipes/${key}`,
           {
             method: "GET",
             headers: {
