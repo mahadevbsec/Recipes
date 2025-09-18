@@ -38,7 +38,7 @@ const LikedProducts = () => {
         )
       ) {
         const response = await fetch(
-          `http://localhost:5000/auth/removeLiked/${recipeId}`,
+          `https://recipes-s.onrender.com/auth/removeLiked/${recipeId}`,
           {
             method: "DELETE",
           }
